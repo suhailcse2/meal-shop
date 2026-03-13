@@ -6,19 +6,30 @@
 :root {
   --navbar-height: 59px;
 }
+/* body{
+    position: relative;
+} */
 #navbar {
   display: flex;
   align-items: center;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  z-index: 50;
+
+
 }
 
 #navbar::before {
   content: "";
-  background-color: black;
+  background-color:black;
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 #navbar ul li {
   list-style: none;
@@ -44,6 +55,7 @@
 }
 #navbar ul {
   display: flex;
+  font-family: 'Baloo Bhai';
 }
 /* home section */
 #home{
@@ -51,7 +63,78 @@ display: flex;
 flex-direction: column;
 padding: 2px 300px;
 justify-content: center;
+align-items: center;
+/* height: 400px; */
+/* height: 800px; */
+height: 86vh;
 
 }
+#home::before{
+    content: "";
+  background: url(img/bg1.jpg);
+  position: absolute;
+  /* height:800px; */
+  height: 88vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+  
+}
+#home h1{
+    color: white;
+    text-align: center;
+     font-family: 'Bree Serif';
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-size: 1.5rem;
+     font-family: 'Bree Serif';
+}
 
-
+/* services center */
+#services{
+    margin: 34px;
+    /* margin-top: 140px; */
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 5px;
+    border-radius: 30px;
+    background-color: grey;
+}
+#services .box img{
+    height: 156px;
+    display: block;
+    margin: auto;
+}
+#services{}
+#services{}
+#services{}
+/* utilities class */
+.h-primary{
+  margin-top: 20px;
+    font-size: 3.8rem;
+    text-decoration: underline;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 12px;
+}
+.btn{
+    padding: 4px 20px;
+    color: white;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 17px;
+    font-size: 1.8rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.centre{
+    text-align: center;
+}
