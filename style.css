@@ -18,13 +18,11 @@
   left: 0px;
   right: 0px;
   z-index: 50;
-
-
 }
 
 #navbar::before {
   content: "";
-  background-color:black;
+  background-color: black;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -39,6 +37,7 @@
 #navbar ul li a {
   display: block;
   text-decoration: none;
+  font-size: 1.5rem;
   color: white;
   border-radius: 1px solid red;
   padding: 0px 34px;
@@ -55,22 +54,21 @@
 }
 #navbar ul {
   display: flex;
-  font-family: 'Baloo Bhai';
+  font-family: "Baloo Bhai";
 }
 /* home section */
-#home{
-display: flex;
-flex-direction: column;
-padding: 2px 300px;
-justify-content: center;
-align-items: center;
-/* height: 400px; */
-/* height: 800px; */
-height: 86vh;
-
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 300px;
+  justify-content: center;
+  align-items: center;
+  /* height: 400px; */
+  /* height: 800px; */
+  height: 86vh;
 }
-#home::before{
-    content: "";
+#home::before {
+  content: "";
   background: url(img/bg1.jpg);
   position: absolute;
   /* height:800px; */
@@ -78,63 +76,142 @@ height: 86vh;
   width: 100%;
   z-index: -1;
   opacity: 0.89;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bree Serif";
+  font-size: 3.6rem;
+}
+#home p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.4rem;
   
-}
-#home h1{
-    color: white;
-    text-align: center;
-     font-family: 'Bree Serif';
-}
-#home p{
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    font-size: 1.5rem;
-     font-family: 'Bree Serif';
+  font-family: "Bree Serif";
 }
 
 /* services center */
-#services{
-    margin: 34px;
-    /* margin-top: 140px; */
+#services {
+  margin: 34px;
+  /* margin-top: 140px; */
+  display: flex;
+}
+#services .box {
+  
+  padding: 34px;
+  margin: 2px 34px;
+  border-radius: 30px;
+  background-color: grey;
+  margin-bottom: 25px;
+}
+#services .box img {
+  height: 156px;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+}
+#services {
+}
+#services {
+}
+#services {
+}
+
+/* client-section */
+#client-section {
+  height: 200px;
+  
+  
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url(img/bg4.jpg);
+  height: 38%;
+  width: 100%;
+  z-index:-1;
+  opacity:0.5;
+}
+#client {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+    
+
+}
+.cleint-item {
+  padding: 38px;
+}
+#client img {
+  height: 150px;
+  
+}
+/* contact-section */
+#contact{
+  position: relative;
+  margin-top: 180px;
+  height: 600px;
+}
+#contact::before{
+  content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+background: url(img/cont.jpg)no-repeat center center /cover;
+
+}
+#contact-box{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
 }
-#services .box{
-    border: 2px solid brown;
-    padding: 34px;
-    margin: 2px 5px;
-    border-radius: 30px;
-    background-color: grey;
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+  
 }
-#services .box img{
-    height: 156px;
-    display: block;
-    margin: auto;
+#contact-box form{
+    width: 40%;
 }
-#services{}
-#services{}
-#services{}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+}
 /* utilities class */
-.h-primary{
+.h-primary {
   margin-top: 20px;
-    font-size: 3.8rem;
-    text-decoration: underline;
-    padding: 12px;
+  font-size: 3.8rem;
+  text-decoration: underline;
+  padding: 12px;
 }
-.h-secondary{
-    font-size: 2.1rem;
-    padding: 12px;
+.h-secondary {
+  font-size: 2.8rem;
+  padding: 12px;
 }
-.btn{
-    padding: 4px 20px;
-    color: white;
-    border: 2px solid white;
-    background-color: brown;
-    margin: 17px;
-    font-size: 1.8rem;
-    border-radius: 15px;
-    cursor: pointer;
+.btn {
+  padding: 4px 20px;
+  color: white;
+  border: 2px solid white;
+  background-color: brown;
+  margin: 17px;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  cursor: pointer;
 }
-.centre{
-    text-align: center;
+.centre {
+  text-align: center;
 }
